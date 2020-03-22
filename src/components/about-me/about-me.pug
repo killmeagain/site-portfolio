@@ -1,0 +1,20 @@
+include ../advantage/advantage
+mixin about-me(props = {})
+    - const { advantages, title } = props;
+    section.about-me#about
+        .about-me__container
+            .about-me__header
+                include ../section-title/section-title
+                +section-title({
+                    title
+                })
+            p.about-me__description  Привет! Меня зовут Тимофей. Я молодой Frontend разработчик! Это моя страница, на которой я буду запечатлять свои достижения и проекты. 
+                                    | Я намерен вырасти в хорошего профессионала, которому будет любая задача по плечу в сфере Web разработки.
+                                    | Для этого я обладаю следующими чертами характера:
+            ul.about-me__list
+                each advantage in advantages
+                    li.about-me__item
+                        +advantage({
+                            title: advantage.title,
+                            description: advantage.description
+                        })

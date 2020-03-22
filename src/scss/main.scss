@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+
+    overflow: hidden;
 }
 
 @import "./fonts.scss";
@@ -8,3 +10,7 @@ body {
 
 @import "../components/home/home";
 @import "../components/header/header";
+@import "../components/section-title/section-title";
+@import "../components/preloader/preloader";
+@import "../components/about-me/about-me";
+@import "../components/advantage/advantage";

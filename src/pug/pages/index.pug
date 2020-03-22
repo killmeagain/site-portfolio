@@ -5,6 +5,7 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Frontend Developer
     body
+        include ../../components/preloader/preloader
         include ../../components/home/home
         include ../../components/header/header
         +header({
@@ -29,5 +30,27 @@ html(lang="ru")
                     title: "Напиши мне",
                     anchor: "contact"
                 }
+            ]
+        })
+        include ../../components/about-me/about-me
+        +about-me({
+            title: "О себе",
+            advantages: [
+                {
+                    title: "Ответственность",
+                    description: "Я люблю решение сложных задач и не боюсь за них браться! А так же всегда стараюсь работать на результат и не упускать ни одной детали. "
+                },
+                {
+                    title: "Пунктуальность",
+                    description: "Задача - есть задача, а срок - есть срок. Знаю, как важно время и стараюсь делать все вовремя. А если произошел форс-мажор, то всегда скажу об этом. "
+                },
+                {
+                    title: "Обучаемость",
+                    description: "Не люблю стоять на месте, всегда развиваюсь и стараюсь учиться чему-то новому. "
+                },
+                {
+                    title: "Ответственность",
+                    description: "Я люблю решение сложных задач и не боюсь за них браться! А так же всегда стараюсь работать на результат и не упускать ни одной детали. "
+                },
             ]
         })

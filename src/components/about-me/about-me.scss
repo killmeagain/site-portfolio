@@ -1,0 +1,11 @@
+.about-me {
+    width: 100%;
+    padding: 60px 0;
+
+    background-color: #f5f5f5;
+
+    @import "./__header/__header";
+    @import "./__container/__container";
+    @import "./__description/__description";
+    @import "./__list/__list";
+}

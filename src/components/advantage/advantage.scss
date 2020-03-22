@@ -1,0 +1,12 @@
+.advantage {
+    width: 230px;
+
+    background-color: #fff;
+
+    border-bottom: 1px solid #d4d4d4;
+
+    padding: 50px 20px;
+
+    @import "./__title/__title";
+    @import "./__description/__description";
+}
