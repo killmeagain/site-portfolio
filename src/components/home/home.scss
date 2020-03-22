@@ -1,0 +1,24 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url("../img/bg-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0px;
+
+    position: relative;
+
+    @import "./__overlay/__overlay";
+    @import "./__content/__content";
+    @import "./__subtitle/__subtitle";
+    @import "./__main-title/__main-title";
+    @import "./__button-down/__button-down";
+}

@@ -1,0 +1,43 @@
+&__button-down {
+    position: absolute;
+    z-index: 1;
+    bottom: 6%;
+
+    width: 60px;
+    height: 60px;
+
+    border: 2px solid $white;
+    border-radius: 50%;
+
+    cursor: pointer;
+    
+    background-color: transparent;
+
+    &:after {
+        content: '';
+        position: absolute;
+
+        width: 12px;
+        height: 12px;
+
+        border: 3px solid white;
+        border-right: none;
+        border-top: none;
+
+        transform: translate(-50%, -50%) rotate(-45deg);
+
+        animation: move-arrow 1s infinite;
+    }
+}
+
+@keyframes move-arrow {
+    0% {
+        transform: translate(-47%, -150%) rotate(-45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-47%, 10%) rotate(-45deg);
+        opacity: 0;
+    }
+}

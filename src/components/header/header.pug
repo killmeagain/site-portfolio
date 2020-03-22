@@ -1,0 +1,11 @@
+mixin header(props = {})
+    -const { list } = props;
+    header.header
+        .header__container
+            .header_logo-container
+                span.header__logo Судаков Тимофей
+            nav.header__navigation
+                ul.header__list
+                    each item in list
+                        li.header__item
+                            a.header__link(href=`#${item.anchor}`)= item.title

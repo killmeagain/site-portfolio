@@ -1,0 +1,18 @@
+&__link {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+    color: $colorText;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        color: #E7746F;
+        transition: 0.1s ease-in-out;
+    }
+}

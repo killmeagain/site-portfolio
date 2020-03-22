@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import "./fonts.scss";
+@import "./vars.scss";
+
+@import "../components/home/home";
+@import "../components/header/header";
