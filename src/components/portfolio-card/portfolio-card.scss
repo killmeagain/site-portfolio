@@ -1,0 +1,20 @@
+.portfolio-card {
+    width: 370px;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    position: relative;
+
+    text-align: center;
+
+    position: relative;
+
+    @import "./__img/__img";
+    @import "./__description-container/__description-container";
+    @import "./__link/__link";
+    @import "./__title/__title";
+    @import "./__description/__description";
+}

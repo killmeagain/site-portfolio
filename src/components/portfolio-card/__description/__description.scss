@@ -1,0 +1,20 @@
+&__description {
+    margin: 0;
+    padding: 0;
+
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+
+    color: $white;
+
+    text-transform: uppercase;
+
+    transform: translateY(110px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease-in-out;
+}

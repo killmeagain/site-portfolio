@@ -1,5 +1,7 @@
 mixin advantage(props = {})
     .advantage
-        - const { title, description } = props;
+        - const { title, description, url } = props;
+        .advantage__img-container
+            img.advantage__img(src=url, alt="Иконка карточки")
         h3.advantage__title= title
         p.advantage__description= description

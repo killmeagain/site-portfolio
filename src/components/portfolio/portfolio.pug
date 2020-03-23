@@ -1,0 +1,21 @@
+include ../portfolio-card/portfolio-card
+
+mixin portfolio(props = {})
+    -const { cards, title } = props;
+    section.portfolio#portfolio
+        .portfolio__container
+            .portfolio__header
+                include ../section-title/section-title
+                +section-title({
+                    title
+                })
+            p.portfolio__description  Это все мои проекты, которые я сделал полностью сам. 
+            ul.portfolio__list
+                each card in cards
+                    li.portfolio__item
+                        +portfolio-card({
+                            title: card.title,
+                            description: card.description,
+                            url: card.url,
+                            href: card.href
+                        })

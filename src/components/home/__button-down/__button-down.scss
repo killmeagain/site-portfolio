@@ -3,6 +3,8 @@
     z-index: 1;
     bottom: 6%;
 
+    display: block;
+
     width: 60px;
     height: 60px;
 
@@ -32,12 +34,12 @@
 
 @keyframes move-arrow {
     0% {
-        transform: translate(-47%, -150%) rotate(-45deg);
+        transform: translate(-47%, 0%) rotate(-45deg);
         opacity: 1;
     }
 
     100% {
-        transform: translate(-47%, 10%) rotate(-45deg);
+        transform: translate(-47%, 250%) rotate(-45deg);
         opacity: 0;
     }
 }

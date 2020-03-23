@@ -1,0 +1,8 @@
+mixin portfolio-card(props = {})
+    - const { title, description, url, href } = props;
+    figure.portfolio-card
+        a.portfolio-card__link(href=href)
+            img.portfolio-card__img(src=url, alt="Изображение из портфолио")
+            figcaption.portfolio-card__description-container
+                h3.portfolio-card__title= title
+                p.portfolio-card__description= description
